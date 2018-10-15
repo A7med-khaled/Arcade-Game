@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frogger Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+</head>
+<body onload="main()">
+    <div class="container">
+        <div style="text-align: center; width: 80%; margin: 0 auto">
+        <div class="nav">
+            <h1>Frogger Game</h1>
+            <ul class="live">
+                <li><img src="images/Heart.png" width="50"></li>
+                <li><i class="fa fa-star" id="s1"></i></li>
+                <li><i class="fa fa-star" id="s2"></i></li>
+                <li><i class="fa fa-star" id="s3"></i></li>
+            </ul>
+            <h5 class="level">Level: 1 </h5>
+
+            
+            <button onclick="reload()"><i class="fa fa-repeat"></i></button>
+        </div>
+        
+        <div class="board" id="board">
+            <canvas id="canvas" width="606" height="600">
+
+            </canvas>
+        </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html> 
